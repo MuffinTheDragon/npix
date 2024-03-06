@@ -1,0 +1,10 @@
+body {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1400px) {
+  body {
+      max-width: 1400px;
+  }
+}

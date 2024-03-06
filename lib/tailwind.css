@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:focus{outline: none}
+
+@layer base {
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 222.2 47.4% 11.2%;
+  
+      --muted: 210 40% 96.1%;
+      --muted-foreground: 215.4 16.3% 46.9%;
+  
+      --popover: 0 0% 100%;
+      --popover-foreground: 222.2 47.4% 11.2%;
+  
+      --border: 214.3 31.8% 91.4%;
+      --input: 214.3 31.8% 91.4%;
+  
+      --card: 0 0% 100%;
+      --card-foreground: 222.2 47.4% 11.2%;
+  
+      --primary: 243 75% 59%;
+      --primary-border: 239 84% 67%;
+      --primary-focus: 228 96% 89%;
+      --primary-foreground: 210 40% 98%;
+  
+      --secondary: 216 12% 84%;
+      --secondary-border: 216 12% 84%;
+      --secondary-focus: 220 13% 91%;
+      --secondary-foreground: 222.2 47.4% 11.2%;
+  
+      --accent: 216 24% 96%;
+      --accent-hover: 216 12% 84%;
+      --accent-foreground: 222.2 47.4% 11.2%;
+  
+      --danger: 0 84% 60%;
+      --danger-border: 0 91% 71%;
+      --danger-focus: 0 96% 89%;
+      --danger-foreground: 0 70% 35%;
+  
+      --ring: 215 20.2% 65.1%;
+  
+      --radius: 0.5rem;
+
+      --success-border: 142 69% 58%;
+      --success-foreground: 143 64% 24%;
+
+      --warning-border: 48 96% 53%;
+      --warning-foreground: 32 81% 29%;
+
+      --info-border: 213 94% 68%;
+      --info-foreground: 226 71% 40%;
+      
+    }
+  
+    .dark {
+      --background: 240 10% 3.9%;
+      --foreground: 213 31% 91%;
+  
+      --muted: 223 47% 11%;
+      --muted-foreground: 215.4 16.3% 56.9%;
+  
+      --accent: 215 28% 17%;
+      --accent-hover: 217 19% 27%;
+      --accent-foreground: 210 40% 98%;
+  
+      --popover: 224 71% 4%;
+      --popover-foreground: 215 20.2% 65.1%;
+  
+      --border: 216 34% 17%;
+      --input: 216 34% 17%;
+  
+      --card: 210 4 11%;
+      --card-foreground: 213 31% 91%;
+  
+      --primary-focus: 243 75% 59%;
+
+      --secondary: 217 19% 27%;
+      --secondary-focus: 218 11% 65%;
+      --secondary-foreground: 210 40% 98%;
+  
+      --danger-focus: 0 72% 51%;
+
+      --ring: 216 34% 17%;
+  
+      --radius: 0.5rem;
+
+      --success-border: 142 72% 29%;
+      --success-foreground: 142 69% 58%;
+
+      --warning-border: 35 92% 33%;
+      --warning-foreground: 48 96% 53%;
+
+      --info-border: 224 76% 48%;
+      --info-foreground: 213 94% 68%;
+
+      --danger-foreground: 0 91% 71%;
+    }
+  }
+  
+  @layer base {
+    body {
+      @apply bg-background text-foreground;
+      font-feature-settings: "rlig" 1, "calt" 1;
+    }
+  }
+
+
+  /* Slide in from Right */
+.slide-in-right-enter {
+  transform: translateX(100%);
+}
+
+.slide-in-right-enter-active {
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.slide-in-right-exit {
+  transform: translateX(0);
+}
+
+.slide-in-right-exit-active {
+  transform: translateX(100%);
+  transition: transform 300ms ease-in-out;
+}
+
+/* Slide in from Top */
+.slide-in-top-enter {
+  transform: translateY(-100%);
+}
+
+.slide-in-top-enter-active {
+  transform: translateY(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.slide-in-top-exit {
+  transform: translateY(0);
+}
+
+.slide-in-top-exit-active {
+  transform: translateY(-100%);
+  transition: transform 300ms ease-in-out;
+}
+
+/* Slide in from Bottom */
+.slide-in-bottom-enter {
+  transform: translateY(100%);
+}
+
+.slide-in-bottom-enter-active {
+  transform: translateY(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.slide-in-bottom-exit {
+  transform: translateY(0);
+}
+
+.slide-in-bottom-exit-active {
+  transform: translateY(100%);
+  transition: transform 300ms ease-in-out;
+}
+
+/* Slide in from Left */
+.slide-in-left-enter {
+  transform: translateX(-100%);
+}
+
+.slide-in-left-enter-active {
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.slide-in-left-exit {
+  transform: translateX(0);
+}
+
+.slide-in-left-exit-active {
+  transform: translateX(-100%);
+  transition: transform 300ms ease-in-out;
+}
+
+/* Fade in/out */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
