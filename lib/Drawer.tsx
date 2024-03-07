@@ -77,7 +77,7 @@ export const Drawer = forwardRef<Ref, DrawerProps>(
 			"break-all overflow-auto flex flex-col shadow-sm p-6 bg-background border border-border border-0",
 			className,
 			{
-				"h-screen w-[400px]":
+				"h-[100dvh] w-[75dvw] sm:w-[400px]":
 					placement === "right" || placement === "left",
 				"border-s": placement === "right",
 				"border-e": placement === "left",

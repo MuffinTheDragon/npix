@@ -72,7 +72,7 @@ export const Modal = forwardRef<Ref, Props>((props, ref) => {
 	const [playAnimation, setPlayAnimation] = useState(false);
 
 	const styles = cn(
-		"p-6 transition-all duration-200 bg-background border border-border shadow-sm rounded-lg w-[400px]",
+		"p-6 transition-all duration-200 bg-background border border-border shadow-sm rounded-lg w-[75dvw] sm:w-[400px]",
 		{
 			"scale-105": playAnimation,
 			"scale-100": !playAnimation,

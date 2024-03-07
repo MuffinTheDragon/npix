@@ -31,7 +31,7 @@ const Toast = (props: ToastProps) => {
 		setTimeout(() => setOpen(true), 10);
 	}, []);
 
-	const position = clsx("fixed", {
+	const position = clsx("fixed z-50", {
 		"top-0 left-0": placement === "top-left",
 		"top-0 right-0": placement === "top-right",
 		"bottom-0 left-0": placement === "bottom-left",
@@ -39,7 +39,7 @@ const Toast = (props: ToastProps) => {
 	});
 
 	const styles = cn(
-		"md:w-96 shadow-2xl m-4 rounded-lg border p-4 bg-accent border border-border z-10",
+		"w-[75dvw] sm:w-[400px] shadow-2xl m-4 rounded-lg border p-4 bg-accent border border-border",
 		className
 	);
 
